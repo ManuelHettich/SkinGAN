@@ -317,7 +317,7 @@ def sample_from_simplices(tri_points, simplices, triangle_weight):
     tindex = np.random.choice(len(simplices), size=1, p=triangle_weight).item()
     triangle = tri_points[simplices[tindex]]
     new_ptr = sample_from_triangle(*triangle)
-    new_ptr = new_ptr.astype(np.int)
+    new_ptr = new_ptr.astype(int)
     return new_ptr
 
 def filter_points(ptr_array, img_shape, landmark_array, dist_thres):
