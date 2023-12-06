@@ -250,6 +250,6 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/python,macos,windows,linux
 
 # Training data
-data/JPEGImages
-data/NNEW_*.txt
+*JPEGImages*
+NNEW_*.txt
 generate
